@@ -1,0 +1,110 @@
+<?xml version="1.0"?>
+<root>
+  <devicevendordef>
+    <vendorname>Logitech</vendorname>
+    <vendorid>0x046d</vendorid>
+  </devicevendordef>
+  <deviceproductdef>
+    <productname>M235</productname>
+    <productid>0xc52b</productid>
+  </deviceproductdef>
+  <list>
+    <item>
+      <name>Leave Japanese Input Mode when opening iTerm2</name>
+      <identifier>private.leave_japanese_input_mode_when_opening_iterm2</identifier>
+      <autogen>
+        __KeyToKey__
+        KeyCode::BACKSLASH, ModifierFlag::COMMAND_L,
+        KeyCode::BACKSLASH, ModifierFlag::COMMAND_L,
+        KeyCode::JIS_EISUU
+      </autogen>
+    </item>
+    <item>
+      <name>Emulate MouseDown</name>
+      <identifier>private.emulate_mousedown</identifier>
+      <autogen>
+        __KeyToKey__
+        KeyCode::FN, ModifierFlag::OPTION_L,
+        KeyCode::VK_MOUSEKEY_BUTTON_LEFT
+      </autogen>
+    </item>
+    <item>
+      <name>Emulate MouseRightDown</name>
+      <identifier>private.emulate_mouserightdown</identifier>
+      <autogen>
+        __KeyToKey__
+        KeyCode::FN, ModifierFlag::COMMAND_L,
+        KeyCode::VK_MOUSEKEY_BUTTON_RIGHT
+      </autogen>
+    </item>
+    <item>
+      <name>Ctrl-D to Delete</name>
+      <identifier>private.keybind.delete</identifier>
+      <autogen>
+        __KeyToKey__
+        KeyCode::D, ModifierFlag::CONTROL_L | ModifierFlag::NONE,
+        KeyCode::DELETE
+      </autogen>
+    </item>
+    <item>
+      <name>Ctrl-Shift-D to Forward Delete</name>
+      <identifier>private.keybind.forwarddelete</identifier>
+      <autogen>
+        __KeyToKey__
+        KeyCode::D, ModifierFlag::CONTROL_L | ModifierFlag::SHIFT_L,
+        KeyCode::FORWARD_DELETE
+      </autogen>
+    </item>
+    <item>
+      <name>Ctrl-J to Left</name>
+      <identifier>private.keybind.arrow.left</identifier>
+      <autogen>
+        __KeyToKey__
+        KeyCode::J, ModifierFlag::CONTROL_L | ModifierFlag::NONE,
+        KeyCode::CURSOR_LEFT
+      </autogen>
+    </item>
+    <item>
+      <name>Ctrl-K to Right</name>
+      <identifier>private.keybind.arrow.right</identifier>
+      <autogen>
+        __KeyToKey__
+        KeyCode::K, ModifierFlag::CONTROL_L | ModifierFlag::NONE,
+        KeyCode::CURSOR_RIGHT
+      </autogen>
+    </item>
+    <item>
+      <name>Ctrl-I to Up</name>
+      <identifier>private.keybind.arrow.up</identifier>
+      <autogen>
+        __KeyToKey__
+        KeyCode::I, ModifierFlag::CONTROL_L | ModifierFlag::NONE,
+        KeyCode::CURSOR_UP
+      </autogen>
+    </item>
+    <item>
+      <name>Ctrl-M to Down</name>
+      <identifier>private.keybind.arrow.down</identifier>
+      <autogen>
+        __KeyToKey__
+        KeyCode::M, ModifierFlag::CONTROL_L | ModifierFlag::NONE,
+        KeyCode::CURSOR_DOWN
+      </autogen>
+    </item>
+    <item>
+      <name>Ctrl-G to Esc</name>
+      <identifier>private.keybind.escape</identifier>
+      <autogen>
+        __KeyToKey__
+        KeyCode::G, ModifierFlag::CONTROL_L | ModifierFlag::NONE,
+        KeyCode::ESCAPE
+      </autogen>
+    </item>
+    <item>
+      <name>Reverse mouse scroll</name>
+      <identifier>private.mousewheel.reverse_mouse_scroll</identifier>
+      <device_only>DeviceVendor::Logitech, DeviceProduct::M235</device_only>
+      <autogen>__FlipScrollWheel__ Option::FLIPSCROLLWHEEL_VERTICAL</autogen>
+    </item>
+  </list>
+</root>
