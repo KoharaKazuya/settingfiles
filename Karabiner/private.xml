@@ -8,6 +8,10 @@
     <productname>M235</productname>
     <productid>0xc52b</productid>
   </deviceproductdef>
+  <appdef>
+    <appname>iTerm2</appname>
+    <equal>com.googlecode.iterm2</equal>
+  </appdef>
   <list>
     <item>
       <name>Leave Japanese Input Mode when opening iTerm2</name>
@@ -98,6 +102,16 @@
         __KeyToKey__
         KeyCode::G, ModifierFlag::CONTROL_L | ModifierFlag::NONE,
         KeyCode::ESCAPE
+      </autogen>
+    </item>
+    <item>
+      <name>Ctrl-Q to Ctrl-D (EOF char) on iTerm2</name>
+      <identifier>private.keybind.eof_on_iterm2</identifier>
+      <only>iTerm2</only>
+      <autogen>
+        __KeyToKey__
+        KeyCode::Q, ModifierFlag::CONTROL_L | ModifierFlag::NONE,
+        KeyCode::D, ModifierFlag::CONTROL_L
       </autogen>
     </item>
     <item>
