@@ -1,0 +1,19 @@
+#!/bin/sh
+
+set -eu
+cd $(dirname $0)
+
+# 既存の .jar を削除
+rm -f settings.jar
+
+# 最終行の改行を全て削除
+find . -name '*.xml' -print0 | while IFS= read -r -d $'' target; do
+  if [ -z "$(cat "$target" | tail -c 1 | tr -d '\n')" ]; then
+    echo $target
+    size=$(($(cat "$target" | wc -c) - 1))
+    (rm "$target" && head -c $size > "$target") < "$target"
+  fi
+done
+
+# アーカイブ
+jar cf settings.jar ./*

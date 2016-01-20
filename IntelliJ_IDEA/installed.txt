@@ -1,0 +1,3 @@
+VisualVMLauncher
+net.nicoulaj.idea.markdown
+org.intellij.scala
