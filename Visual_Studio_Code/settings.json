@@ -1,0 +1,9 @@
+// 既定の設定を上書きするには、このファイル内に設定を挿入します
+{
+    "editor.fontFamily": "Osaka-mono",
+    "editor.fontSize": 18,
+    "editor.scrollBeyondLastLine": false,
+    "files.autoGuessEncoding": true,
+    "window.zoomLevel": 0,
+    "workbench.iconTheme": "vs-minimal"
+  }
