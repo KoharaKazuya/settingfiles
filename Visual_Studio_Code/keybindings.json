@@ -1,5 +1,6 @@
 // 既定値を上書きするには、このファイル内にキー バインドを挿入します
 [
+{ "key": "ctrl+1",                "command": "workbench.action.toggleSidebarVisibility" },
 { "key": "ctrl+a",                "command": "editor.action.selectAll",
                                      "when": "editorTextFocus" },
 { "key": "ctrl+c",                "command": "editor.action.clipboardCopyAction",
@@ -15,6 +16,10 @@
 { "key": "shift+ctrl+l",          "command": "expandLineSelection",
                                      "when": "editorTextFocus" },
 { "key": "ctrl+n",                "command": "workbench.action.files.newUntitledFile" },
+{ "key": "ctrl+o",                "command": "editor.action.sortLinesAscending",
+                                     "when": "editorTextFocus" },
+{ "key": "shift+ctrl+o",          "command": "editor.action.sortLinesDescending",
+                                     "when": "editorTextFocus" },
 { "key": "ctrl+q",                "command": "workbench.action.closeActiveEditor" },
 { "key": "shift+ctrl+q",          "command": "workbench.action.reopenClosedEditor" },
 { "key": "ctrl+r",                "command": "deleteAllLeft",
@@ -47,11 +52,17 @@
                                      "when": "editorTextFocus" },
 { "key": "ctrl+/",                "command": "editor.action.commentLine",
                                      "when": "editorTextFocus" },
+{ "key": "ctrl+.",                "command": "closeTag.closeHTMLTagInPlace",
+                                     "when": "editorTextFocus" },
 { "key": "ctrl+tab",              "command": "workbench.action.nextEditor" },
 { "key": "shift+ctrl+tab",        "command": "workbench.action.previousEditor" },
 { "key": "ctrl+up",               "command": "editor.action.moveLinesUpAction",
                                      "when": "editorTextFocus" },
+{ "key": "shift+ctrl+i",          "command": "editor.action.insertCursorAbove",
+                                     "when": "editorTextFocus" },
 { "key": "ctrl+down",             "command": "editor.action.moveLinesDownAction",
+                                     "when": "editorTextFocus" },
+{ "key": "shift+ctrl+m",          "command": "editor.action.insertCursorBelow",
                                      "when": "editorTextFocus" },
 { "key": "ctrl+right",            "command": "cursorWordStartRight",
                                      "when": "editorTextFocus" },
@@ -66,5 +77,6 @@
                                      "when": "editorTextFocus" },
 { "key": "f11",                   "command": "workbench.action.toggleFullScreen" },
 { "key": "f12",                   "command": "workbench.action.openGlobalSettings" },
-{ "key": "shift+f12",             "command": "workbench.action.openGlobalKeybindings" }
+{ "key": "shift+f12",             "command": "workbench.action.openGlobalKeybindings" },
+{ "key": "cmd+0",                 "command": "workbench.action.zoomReset" }
 ]
