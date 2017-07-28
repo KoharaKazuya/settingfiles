@@ -2,8 +2,11 @@
 {
     "editor.fontFamily": "Osaka-mono",
     "editor.fontSize": 18,
+    "editor.renderControlCharacters": true,
+    "editor.rulers": [80],
     "editor.scrollBeyondLastLine": false,
     "files.autoGuessEncoding": true,
     "window.zoomLevel": 0,
-    "workbench.iconTheme": "vs-minimal"
+    "workbench.iconTheme": "vs-minimal",
+    "workbench.startupEditor": "none"
   }
